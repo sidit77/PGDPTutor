@@ -2,14 +2,16 @@
 public class IntListElement {
 	private int info;
 	private IntListElement next;
+	private IntListElement prev;
 	
 	public IntListElement(int info) {
-		this(info, null);
+		this(info, null, null);
 	}
 	
-	public IntListElement(int info, IntListElement next) {
+	public IntListElement(int info, IntListElement next, IntListElement prev) {
 		this.info = info;
 		this.next = next;
+		this.prev = prev;
 	}
 	public int getInfo() {
 		return info;
@@ -22,5 +24,13 @@ public class IntListElement {
 	}
 	public void setNext(IntListElement next) {
 		this.next = next;
+	}
+
+	public IntListElement getPrev() {
+		return prev;
+	}
+
+	public void setPrev(IntListElement prev) {
+		this.prev = prev;
 	}
 }

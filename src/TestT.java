@@ -11,7 +11,7 @@ public class TestT { // eig. Test
 		list.append(11);
 		assertTrue(list.toString().equals("1,2,3,4,5,6,7,8,9,10,11"), "append()");
 		assertTrue(list.size() == 11, "size() 2");
-		
+		assertTrue(list.getLastElement().getInfo() == 11, "getLastElement() 1");
 		list.remove(0);
 		assertTrue(list.toString().equals("2,3,4,5,6,7,8,9,10,11"), "remove() 1");
 		list.remove(5);
@@ -30,6 +30,7 @@ public class TestT { // eig. Test
 		assertTrue(list.toString().equals("2,3,4,5,6,8,9,10"), "copy() 2");
 		
 		assertTrue(list.search(4).length == 1, "search() ");
+		assertTrue(list.reverse().toString().equals("10,9,8,6,5,4,3,2"), "reverse() 2");
 	}
 	
 	public static void assertTrue(boolean b, String testcase) {
