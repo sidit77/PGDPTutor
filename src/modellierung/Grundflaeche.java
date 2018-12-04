@@ -10,6 +10,10 @@ public abstract class Grundflaeche {
         return false;
     }
 
+    public Quadrat zuQuadrat(){
+        return null;
+    }
+
     @Override
     public String toString(){
         return "[umfang = " + umfang() + " flaeche = " + flaeche() + "]";

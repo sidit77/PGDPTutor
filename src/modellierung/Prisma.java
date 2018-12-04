@@ -34,6 +34,14 @@ public class Prisma {
         return grundflaeche.flaeche() * 2 + grundflaeche.umfang() * hoehe;
     }
 
+    public boolean istWuerfel(){
+        Quadrat g = grundflaeche.zuQuadrat();
+        if(g == null)
+            return false;
+        return g.getLaenge() == hoehe;
+
+    }
+
     @Override
     public String toString() {
         return String.format("[volumen = %f oberfläche = %f", volumen(), oberflaeche());
