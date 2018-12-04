@@ -26,6 +26,11 @@ public class NEck extends Grundflaeche {
     }
 
     @Override
+    public boolean istQuadrat() {
+        return ecken == 4;
+    }
+
+    @Override
     public double umfang() {
         return laenge * ecken;
     }

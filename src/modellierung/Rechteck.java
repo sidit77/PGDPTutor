@@ -26,6 +26,11 @@ public class Rechteck extends Grundflaeche {
     }
 
     @Override
+    public boolean istQuadrat() {
+        return laenge == breite;
+    }
+
+    @Override
     public double umfang() {
         return 2 * laenge + 2 * breite;
     }
